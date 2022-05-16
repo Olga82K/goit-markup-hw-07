@@ -1,0 +1,35 @@
+.features {
+    background-color: var(--primery-bg-color);
+}
+    
+.features__list {
+    display: flex;
+
+    .features__item {
+    display: block;
+    max-width: 270px;}
+}
+  
+.features__item:not(:last-child) {
+    margin-right: 30px;
+} 
+
+.features__title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.features__icon {
+    @extend %placeholder1;
+    justify-content: center;
+    width: 270px;
+    height: 120px; 
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+    

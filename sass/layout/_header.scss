@@ -1,0 +1,63 @@
+
+.page-header {
+    background-color: var(--primery-bg-color);
+    border-bottom: 1px solid #ECECEC;
+
+    &__style {
+    @extend %placeholder1;}
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.site-nav__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    color: #212121; 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, :focus {
+    color: var(--accent-color);}
+}
+
+.site-contact{
+    @extend %placeholder1;
+    margin-left: auto;
+}
+
+.site-contact__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.site-contact__link {
+    display: flex;
+    padding: 32px 0;
+
+    color: #757575; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover, :focus {
+    color: var(--accent-color);}
+}
+
+.site-contact__icon {
+    fill:currentColor; 
+    margin-right: 10px;
+}
